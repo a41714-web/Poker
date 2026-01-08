@@ -2,17 +2,14 @@ namespace Core;
 
 public class Card
 {
-    public string Suit { get; set; }
-    public string Rank { get; set; }
+    public Suit Suit { get; set; }
+    public Rank Rank { get; set; }
 
-    public Card(string suit, string rank)
+    public Card(Suit suit, Rank rank)
     {
         Suit = suit;
         Rank = rank;
     }
 
-    public override string ToString()
-    {
-        return $"{Rank} of {Suit}";
-    }
+    public override string ToString() => $"{Rank} of {Suit}";
 }
